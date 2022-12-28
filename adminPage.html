@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;800&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <style>
+        .header .darck-mode-toggle {
+            right: 95%;
+            top: 45px;
+        }
+
+        @media (max-width: 992px) {
+            .header .darck-mode-toggle {
+                right: 93%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header .darck-mode-toggle {
+                right: 90%;
+            }
+
+            .box .add-buttn button {
+                top: 20px;
+            }
+
+            .open.adding-dilog .form {
+                width: 500px;
+                height: 350px;
+            }
+
+            .open.adding-dilog .form form {
+                gap: 30px;
+            }
+
+        }
+
+        @media (max-width: 567px) {
+            .header .darck-mode-toggle {
+                right: 87%;
+            }
+
+            .open.adding-dilog .form {
+                width: 400px;
+                height: 300px;
+            }
+
+            .open.adding-dilog .form form {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .open.adding-dilog .form {
+                width: 350px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body style="position: relative;">
+    <span class="up"><i class="fa-solid fa-angle-up"></i></span>
+    <div class="header" style="justify-content: center;padding: 15px;">
+        <div class="darck-mode-toggle">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+        <div class="logo">
+            <i class="fa-solid fa-a a"></i>
+            <i class="fa-solid fa-4 four"></i>
+        </div>
+    </div>
+    <div class="contianer">
+        <div class="head-sec">
+            <h1 class="rtl">Admin Page</h1>
+        </div>
+        <div class="sec" style="margin-bottom: 20px;">
+            <p class="rtl h">مرحباً بك أيها الآدمن، في هذه الصفحة ستتمكن من تغيير بعض الخصائص الخاصة بالموقع كامل.</p>
+        </div>
+        <div class="boxes sec">
+            <div class="box">
+                <div class="h rtl">
+                    تحويل من light الى dark :
+                </div>
+                <div class="toggle-con">
+                    <div class="rtl change-dark"
+                        title="يمكنك التحويل إن كانت مفعلة عن طريق الضغط على حرف الA في اللوقو!">!(¬‿¬) You Can Not
+                        Convert</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="h rtl">تغيير اللون الأساسي للصفحة :</div>
+                <div class="colors">
+                    <div class="col" style="--bc-main-coloer:#0088ff;">#0088FF</div>
+                    <div class="col" style="--bc-main-coloer:#ef233c;">#EF233C</div>
+                    <div class="col" style="--bc-main-coloer:#ffba08;">#FFBA08</div>
+                    <div class="col" style="--bc-main-coloer:#7209b7;">#7209B7</div>
+                    <div class="col" style="--bc-main-coloer:#27a300;">#27A300</div>
+                    <div class="col" style="--bc-main-coloer:#ff8fa3;">#FF8FA3</div>
+                    <div class="col" style="--bc-main-coloer:#023e8a;">#023E8A</div>
+                    <div class="col" style="--bc-main-coloer:#d90429;">#D90429</div>
+                    <div class="col" style="--bc-main-coloer:#ff8800;">#FF8800</div>
+                    <div class="col" style="--bc-main-coloer:#b5179e;">#B5179E</div>
+                    <div class="col" style="--bc-main-coloer:#2a850e;">#2A850E</div>
+                    <div class="col" style="--bc-main-coloer:#ff4d6d;">#FF4D6D</div>
+                </div>
+                <div class="change">تغيير</div>
+            </div>
+            <div class="box">
+                <div class="h rtl">تغيير لون خلفية ال body :</div>
+                <div class="colors-body">
+                    <div class="col-body" style="--bc-main-coloer:#eef1f3;">#EEF1F3</div>
+                    <div class="col-body" style="--bc-main-coloer:#e2e4e6;">#E2E4E6</div>
+                    <div class="col-body" style="--bc-main-coloer:#dee1e3;">#DEE1E3</div>
+                    <div class="col-body" style="--bc-main-coloer:#d2d4d6;">#D2D4D6</div>
+                    <div class="col-body" style="--bc-main-coloer:#ced1d3;">#CED1D3</div>
+                    <div class="col-body" style="--bc-main-coloer:#c2c4c6;">#C2C4C6</div>
+                </div>
+                <div class="change-body">تغيير</div>
+            </div>
+            <div class="box">
+                <div class="add-button">
+                    <button>Add Admin</button>
+                </div>
+                <div class="h rtl">التحكم بال Admins :</div>
+                <div class="admins">
+                    <!-- <div class="ad">
+                        <div class="img">
+                            <img src="img/admin.jfif" alt="">
+                        </div>
+                        <div class="info">
+                            <h3 class="name">Abdallah Fawzi</h3>
+                            <p class="user-name" title="UN => User Name">UN: A4</p>
+                            <p class="password" title="PW => Password">PW: 4444</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="created">
+            <span>Developed by : </span>
+            <span>Abdallah Fawzi <i class="fa-solid fa-heart hc"></i></span>
+        </div>
+        <div class="contact">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100043098108008"><i
+                    style="--bc-color:#337ab7;" class="fa-brands fa-facebook-f"></i></a>
+            <a target="_blank" href="https://www.instagram.com/abdallahf44/"><i style="--bc-color:#337ab7;"
+                    class="fa-brands fa-instagram hc"></i></a>
+            <a target="_blank" href="mailto:abdallahfawziabumostafa@gmail.com"><i style="--bc-color:#333;"
+                    class="fa-regular fa-envelope"></i></a>
+            <a target="_blank" href="https://github.com/AbdallahF44"><i style="--bc-color:#f90;"
+                    class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+    <div class="adding-dilog">
+        <div class="form">
+            <div class="close">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <form>
+                <input type="text" placeholder="Enter Admin Name" required class="adminName" />
+                <input type="text" placeholder="Enter Admin User Name" required class="adminUserName" />
+                <input type="password" placeholder="Enter Admin Password" required class="adminPassword" />
+                <span class="add button">Add</span>
+            </form>
+        </div>
+    </div>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/admin.js"></script>
+    <script src="js/shared.js"></script>
+</body>
+
+</html>
